@@ -15,12 +15,12 @@ The CMU-Cambridge Statistical Language Modeling Toolkit need for make cmu-sphinx
 %setup -q -n %{name}
 
 %build
-rm -fr %{buildroot}
 ./autogen.sh
 %configure
 %make
 
 %install
+rm -fr %{buildroot}
 %makeinstall_std
 
 %clean
