@@ -1,12 +1,10 @@
-%define svnrelease 10753
-
 Summary: The CMU-Cambridge Statistical Language Modeling Toolkit
 Name: cmuclmtk
-Version: 0.%svnrelease
-Release: %mkrel 1
+Version: 0.7
+Release: %mkrel 0
 License: GPL
 Group: Development/Other
-Source: http://cmusphinx.svn.sourceforge.net/viewvc/cmusphinx/trunk/cmuclmtk/cmusphinx-%{name}.tar.gz
+Source: http://downloads.sourceforge.net/project/cmusphinx/cmuclmtk/0.7/%{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}
 URL: http://cmusphinx.sourceforge.net/
 
@@ -14,10 +12,9 @@ URL: http://cmusphinx.sourceforge.net/
 The CMU-Cambridge Statistical Language Modeling Toolkit need for make cmu-sphinx's language models
 
 %prep
-%setup -q -n %{name}
+%setup -q
 
 %build
-./autogen.sh
 %configure
 %make
 
@@ -33,4 +30,4 @@ rm -fr %{buildroot}
 %{_bindir}/*
 %{_libdir}/*
 %{_includedir}/%{name}/*
-%doc README ReleaseNotes
+%doc README NEWS ChangeLog TODO
