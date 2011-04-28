@@ -15,6 +15,10 @@ The CMU-Cambridge Statistical Language Modeling Toolkit need for make cmu-sphinx
 %setup -q
 
 %build
+%{__libtoolize}
+%{__aclocal}
+%{__autoconf}
+%{__automake}
 %configure
 %make
 
