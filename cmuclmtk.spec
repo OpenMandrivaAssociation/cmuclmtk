@@ -3,7 +3,7 @@
 Summary: The CMU-Cambridge Statistical Language Modeling Toolkit
 Name: cmuclmtk
 Version: 0.7
-Release: 1
+Release: 2
 License: GPL
 Group: Development/Other
 Source: http://downloads.sourceforge.net/project/cmusphinx/cmuclmtk/0.7/%{name}-%{version}.tar.gz
