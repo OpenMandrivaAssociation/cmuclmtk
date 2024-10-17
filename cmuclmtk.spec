@@ -7,7 +7,7 @@ Release: 2
 License: GPL
 Group: Development/Other
 Source: http://downloads.sourceforge.net/project/cmusphinx/cmuclmtk/0.7/%{name}-%{version}.tar.gz
-URL: http://cmusphinx.sourceforge.net/
+URL: https://cmusphinx.sourceforge.net/
 
 %description
 The CMU-Cambridge Statistical Language Modeling Toolkit need for make
